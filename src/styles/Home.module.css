@@ -1,0 +1,105 @@
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.productCard {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid var(--cc-primary);
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productImage {
+  max-width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .productImage {
+    width: 50%;
+  }
+}
+
+.productCard h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.productCard p,
+.productCard h3 {
+  margin: 0;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+.price {
+  padding: 1rem 0;
+  font-weight: 600;
+}
+
+.quantityContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.quantityContainer p {
+  background: #ededed;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.quantityContainer button {
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  background-color: var(--cc-primary);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+.quantityContainer button:hover {
+  background-color: var(--cc-p-dark);
+  cursor: pointer;
+}
+
+.quantityContainer button:disabled {
+  background-color: var(--cc-p-light);
+}
+
+.addCart {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  background-color: var(--cc-primary);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.addCart:hover {
+  cursor: pointer;
+  background-color: var(--cc-p-dark);
+}
+
+.addCart:disabled {
+  background-color: var(--cc-p-light);
+}
